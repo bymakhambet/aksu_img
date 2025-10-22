@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 40px 20px 30px;
+            text-align: center;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #222;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 8px;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .image-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-info {
+            padding: 12px 15px;
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        /* Tablet and larger screens */
+        @media (min-width: 600px) {
+            .container {
+                padding: 30px 15px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            header {
+                padding: 50px 20px 35px;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+                padding: 60px 20px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            header {
+                padding: 60px 0 40px;
+            }
+
+            .image-item {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .image-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GALLERY</h1>
+        <p class="subtitle">Photography Collection</p>
+    </header>
+
+    <div class="container">
+        <div class="gallery">
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112252/1_u7z8ut.jpg" alt="Image 1">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112270/2_avsljs.jpg" alt="Image 2">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112260/3_jpqsc0.jpg" alt="Image 3">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112261/4_jzrfht.jpg" alt="Image 4">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112249/5_rbgwws.jpg" alt="Image 5">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112258/7_x5vpjn.jpg" alt="Image 6">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112263/6_kkvnib.jpg" alt="Image 7">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112262/8_mtuiah.png" alt="Image 8">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112274/9_lygu6m.jpg" alt="Image 9">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112275/10_kxco2l.jpg" alt="Image 10">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112285/11_empbza.jpg" alt="Image 11">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112281/12_ngwmmy.jpg" alt="Image 12">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112279/13_j4lbyc.jpg" alt="Image 13">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112298/14_vnpdxj.jpg" alt="Image 14">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112291/15_wvdglb.jpg" alt="Image 15">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112288/16_r86lmr.jpg" alt="Image 16">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112287/17_dqpwkt.jpg" alt="Image 17">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112304/18_hkoucz.jpg" alt="Image 18">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112306/19_ykom9r.jpg" alt="Image 19">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112324/20_jjgmxe.jpg" alt="Image 20">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112304/21_gf3ssd.jpg" alt="Image 21">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112308/21-1_ysn18n.jpg" alt="Image 22">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112312/22_rhcaeh.jpg" alt="Image 23">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112327/23_jwrol3.jpg" alt="Image 24">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112323/24_hmb3q4.jpg" alt="Image 25">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112315/25_yf7zgn.png" alt="Image 26">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112315/26_ikolmj.png" alt="Image 27">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112315/27_a5kopz.png" alt="Image 28">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+            <div class="image-item">
+                <img src="https://res.cloudinary.com/dxkuidd6d/image/upload/v1761112315/26_ikolmj.png" alt="Image 29">
+                <div class="image-info">photo by.makhambet</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
